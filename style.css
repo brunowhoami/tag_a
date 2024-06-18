@@ -5,7 +5,7 @@
 }
 
 body {
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     background-color: #9B86BD;
@@ -27,7 +27,6 @@ body {
     margin: 1em;
     margin-bottom: 1em;
     font-size: 24px;
-    color: #5A639C;
 }
 
 .container__carrossel {
@@ -104,6 +103,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
 .imagem {
     display: block;
     margin: 2em auto;
@@ -115,5 +115,36 @@ body {
 }
 
 .link:hover {
-    color: #d82424;
+    color: #9B86BD;
+}
+
+/* a:link {
+    color: #5A639C;
+} */
+
+/* a:visited {
+    color: crimson;
+} */
+
+/* a:active {
+    color: black;
+} */
+
+a:focus {
+    outline: none;
+    border-bottom: 2px solid #5A639C;
+}
+
+/* a::before {
+    content: ">";
+    color: #5A639C;
+}
+
+a::after {
+    content: "<";
+    color: #5A639C;
+} */
+
+a:nth-child(2n) {
+    color: #ffffff;
 }

@@ -61,6 +61,38 @@
                     </div>
                 </div>
                 <div class="slide">
+                    <h1 class="texto">target</h1>
+                    <div class="container__paragrafo">
+                        <p class="texto__paragrafo">
+                            O  atributo na  tag é usado para especificar a janela ou quadro onde um hiperlink deve ser aberto quando clicado. 
+                            Ele permite que você controle o local onde o conteúdo vinculado será exibido
+                        </p>
+                        <h2 class="subtitulo">Valores:</h2>
+                        <p class="texto__paragrafo1">
+                            _blank: Abre o link em uma nova guia ou janela do navegador.
+                            _self: Abre o link na mesma janela ou quadro da página atual. Esse é o comportamento padrão se nenhum atributo for especificado.target
+                            _parent: Abre o link no quadro pai da janela atual.
+                            _top: Abre o link no quadro superior da janela do navegador, substituindo efetivamente toda a página atual.
+                            framename: Abre o link em um quadro específico identificado pelo atributo. Esse quadro já deve existir no documento HTML.
+                        </p>
+                        <h2 class="subtitulo">Casos de uso:</h2>
+                        <p class="texto__paragrafo1">
+                            Abrindo links em novas guias: use para abrir links em novas guias, permitindo que os usuários mantenham a página atual aberta enquanto exploram o conteúdo vinculado.target="_blank"
+                            Manter o contexto: Use para abrir links na mesma janela, mantendo o usuário dentro do contexto da página atual, especialmente para ações que exijam permanecer dentro do mesmo site ou aplicativo.target="_self"
+                            Trabalhando com conjuntos de quadros: use ou controle o quadro em que o conteúdo vinculado é exibido em um layout de conjunto de quadros.target="_parent"target="_top"
+                            Direcionamento de quadros específicos: use para abrir links em quadros específicos definidos no documento HTML.framename
+                        </p>    
+                        <h2 class="subtitulo">Considerações:</h2>
+                        <p class="texto__paragrafo1"> 
+                            Experiência do usuário: Considere as expectativas do usuário e o fluxo geral do site ao decidir qual valor usar.target
+                            Acessibilidade: garanta que os usuários do teclado ainda possam acessar e navegar pelos links, independentemente do valor.target
+                            Segurança: Seja cauteloso ao usar links externos, pois isso pode levar os usuários a abrir sites inesperados ou potencialmente prejudiciais.target="_blank"
+                        </p>
+                        <h2 class="subtitulo">Sintaxe:</h2>
+                        <img class="imagem" src="./img/target.png">
+                    </div>
+                </div>
+                <div class="slide">
                     <h1 class="texto">href</h1>
                     <div class="container__paragrafo">
                         <p class="texto__paragrafo">
@@ -70,7 +102,7 @@
                             Sem o href, os links não funcionariam como esperado, 
                             servindo apenas como texto sem interatividade.
                         </p>
-                        <h2 class="subtitulo">Funcionalidade Principal</h2>
+                        <h2 class="subtitulo">Funcionalidade Principal:</h2>
                         <p class="texto__paragrafo1">
                             O objetivo principal do href é especificar o URL 
                             (Uniform Resource Locator) do recurso que o link deve apontar. Esse recurso pode ser:
@@ -81,6 +113,40 @@
                         </p>
                         <h2 class="subtitulo">Sintaxe:</h2>
                         <img class="imagem" src="./img/href.png">
+                    </div>
+                </div>
+                <div class="slide">
+                    <h1 class="texto">rel</h1>
+                    <div class="container__paragrafo">
+                        <p class="texto__paragrafo">
+                            O  atributo (relationship) é uma ferramenta versátil usada dentro de várias tags HTML, 
+                            incluindo a  tag para hiperlinks. Ele fornece uma maneira de especificar a relação entre a página atual e o recurso vinculado,
+                            oferecendo contexto e informações adicionais para mecanismos de pesquisa e outros aplicativos.
+                        </p>
+                        <h2 class="subtitulo">No contexto da tag a:</h2>
+                        <p class="texto__paragrafo1">
+                            O  atributo desempenha um papel crucial na otimização de mecanismos de busca (SEO), 
+                            ajudando os mecanismos de pesquisa a entender a natureza do conteúdo vinculado e sua relevância para a página atual. 
+                            Essas informações podem influenciar como a página vinculada é indexada e classificada nos resultados da pesquisa
+                        </p>
+                        <h2 class="subtitulo">Valores rel comuns para tags a:</h2>
+                        <p class="texto__paragrafo1">
+                            nofollow: Este é o valor mais utilizado  . Ele instrui os mecanismos de busca a não seguir o link para fins de classificação. Isso pode ser útil para links para recursos externos que não contribuem diretamente para o conteúdo da página atual, como links para perfis de mídia social ou anúncios.rel
+                            sponsored: Este valor indica que o link é um anúncio patrocinado ou pago. Os mecanismos de busca podem tratar os links patrocinados de forma diferente em seus algoritmos.
+                            ugc (conteúdo gerado pelo usuário): esse valor sugere que o conteúdo vinculado foi criado por um usuário, como comentários, avaliações ou postagens em fóruns. Os mecanismos de pesquisa podem considerar isso ao avaliar a qualidade geral e a confiabilidade da página vinculada.
+                            external: esse valor informa explicitamente aos mecanismos de pesquisa que o link aponta para um domínio externo, o que pode ser útil para distinguir entre links internos e externos.
+                            noopener: Esse valor instrui o navegador a não abrir a página vinculada em uma nova janela com a mesma  propriedade. Isso pode ser usado para evitar vulnerabilidades de segurança relacionadas a janelas pop-up.window.opener
+                            noreferrer: Esse valor instrui o navegador a não incluir o cabeçalho de referência ao abrir a página vinculada. Isso pode ser usado para proteger a privacidade do usuário, impedindo que o site vinculado saiba qual página encaminhou o usuário.
+                        </p>
+                        <p class="texto__paragrafo1">
+                            Valores Adicionais:
+                            icon: especifica a relação entre uma página da Web e um arquivo de ícone.
+                            stylesheet: indica a relação entre uma página da Web e um arquivo de folha de estilo.
+                            alternate: define versões alternativas de uma página da Web para diferentes dispositivos ou tipos de mídia.
+                            canonical: identifica a versão principal ou canônica de uma página da Web quando há várias versões do mesmo conteúdo.
+                        </p>
+                        <h2 class="subtitulo">Sintaxe:</h2>
+                        <img class="imagem" src="./img/rel.png">
                     </div>
                 </div>
             </div>
