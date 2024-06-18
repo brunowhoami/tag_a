@@ -10,16 +10,85 @@
 <body>
 
     <div class="container__link">
-            <a id="link1" accesskey="T" href="https://www.youtube.com/">Youtube</a>
-            <a id="link1" target="_blank" href="https://www.youtube.com/">Videos</a>
-            <a id="link1" rel="noreferrer" href="https://www.youtube.com/">Musica</a>
-            <a id="link1" title="Video Aulas" href="https://www.youtube.com/">Aulas</a>
-            <a id="link1" type="button" href="#">Site</a>
-            <a id="link1" href="img/Ruido.rar">Download</a>
-            <a id="link1" href="mailto:brunooliveiradarosabp@gmail.com">E-mail</a> 
+        <a class="link" accesskey="T" href="https://www.youtube.com/">Youtube</a>
+        <a class="link" target="_blank" href="https://www.youtube.com/">Videos</a>
+        <a class="link" rel="noreferrer" href="https://www.youtube.com/">Musica</a>
+        <a class="link" title="Video Aulas" href="https://www.youtube.com/">Aulas</a>
+        <a class="link" href="https://www.google.com.br">Site</a>
+        <a class="link" href="img/Ruido.rar">Download</a>
+        <a class="link" href="mailto:brunooliveiradarosabp@gmail.com">E-mail</a> 
     </div>
-    <div class="container__texto">
-        <h1 class="texto">Tag A</h1>
+
+    <div class="container__carrossel">
+        <div class="container__texto">
+            <!-- <h1 class="texto">Tag A</h1> -->
+            <div class="carrossel">
+                <div class="slide">
+                    <h1 class="texto">Tag A</h1>
+                    <div class="container__paragrafo">
+                        <p class="texto__paragrafo">A tag a, mais conhecida como tag ancora, é responsavel por adicionar links na sua pagina web.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <h1 class="texto">accesskey</h1>
+                    <div class="container__paragrafo">
+                        <p class="texto__paragrafo">
+                            O atributo na tag é um recurso HTML preterido que foi usado para criar atalhos de teclado para hiperlinks. 
+                            Ele permitia que os usuários ativassem um link pressionando uma tecla específica ou uma combinação de teclas no teclado. 
+                            No entanto, devido a preocupações de acessibilidade e à prevalência de técnicas modernas de navegação baseadas em JavaScript, 
+                            o atributo não é mais amplamente utilizado e é considerado obsoleto.
+                        </p>
+                        <h2 class="subtitulo">Problemas com accesskey</h2>
+                        <p class="texto__paragrafo1">
+                            Conflitos de acessibilidade: os atalhos podem interferir em todo o sistema ou em atalhos definidos pelo navegador, 
+                            potencialmente causando ações não intencionais.
+                            Comportamento inconsistente: O comportamento dos atalhos variou entre diferentes navegadores e sistemas operacionais, 
+                            levando a experiências de usuário imprevisíveis.
+                            Dependência do teclado: beneficiou principalmente os usuários somente do teclado, 
+                            mas não aqueles que dependiam de outros métodos de entrada, como mouse ou tela sensível ao toque.
+                        </p>
+                        <h2 class="subtitulo">Alternativas modernas</h2>
+                        <p class="texto__paragrafo1">
+                            Navegação baseada em JavaScript: as estruturas e bibliotecas JavaScript fornecem maneiras mais robustas e flexíveis de criar atalhos
+                            de teclado para elementos de navegação, incluindo links.
+                            Estrutura HTML semântica: Usar marcação HTML semântica adequada, como elementos e elementos, 
+                            pode melhorar a acessibilidade e permitir que os leitores de tela anunciem links adequadamente.
+                            Atributos Aria: Os atributos Aria, parte da especificação ARIA (Accessible Rich Internet Applications), 
+                            podem ser usados para fornecer informações adicionais sobre links e outros elementos interativos para tecnologias assistivas.
+                        </p>
+                        <h2 class="subtitulo">Sintaxe:</h2>
+                        <img class="imagem" src="./img/accesskey.png">
+                    </div>
+                </div>
+                <div class="slide">
+                    <h1 class="texto">href</h1>
+                    <div class="container__paragrafo">
+                        <p class="texto__paragrafo">
+                            O atributo href (Hypertext REFerence) na tag <a> é um elemento fundamental 
+                            na construção de hiperlinks em páginas da web. 
+                            Ele define o destino para o qual o usuário será direcionado quando clicar no link. 
+                            Sem o href, os links não funcionariam como esperado, 
+                            servindo apenas como texto sem interatividade.
+                        </p>
+                        <h2 class="subtitulo">Funcionalidade Principal</h2>
+                        <p class="texto__paragrafo1">
+                            O objetivo principal do href é especificar o URL 
+                            (Uniform Resource Locator) do recurso que o link deve apontar. Esse recurso pode ser:
+                            Outra página da web: Ao clicar no link, o usuário será direcionado para a página indicada pelo URL.
+                            Um arquivo: O arquivo pode ser baixado para o computador do usuário, como um documento PDF, imagem ou arquivo de som.
+                            Um endereço de e-mail: O link abre o cliente de e-mail padrão do usuário com o endereço pré-preenchido, pronto para enviar uma mensagem.
+                            Uma âncora na mesma página: O link direciona o usuário para uma seção específica da mesma página, identificada por um identificador de fragmento (#).
+                        </p>
+                        <h2 class="subtitulo">Sintaxe:</h2>
+                        <img class="imagem" src="./img/href.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="prev">Anterior</button>
+        <button class="next">Proximo</button>
     </div>
+
+    <script src="app.js" defer></script>
 </body>
 </html>
